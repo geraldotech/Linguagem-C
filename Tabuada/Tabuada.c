@@ -1,5 +1,5 @@
 #include <stdio.h>
-//byGeraldo-Tech
+//by Geraldo-Tech do while for
 void main () {
 int cont, res, opt;
 do
