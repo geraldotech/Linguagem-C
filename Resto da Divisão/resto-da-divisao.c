@@ -1,7 +1,7 @@
 #include <stdio.h>
 void main () {
     int x, y, rest, opt;
-    //CALCULA RESTO DIVISAO COM DO WHILE
+    //CALCULAR RESTO DIVISAO COM DO WHILE
 do{
     printf("Insira um valor:\n");
     scanf("%i", &x);
