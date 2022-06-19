@@ -1,0 +1,265 @@
+1)
+#include <stdio.h>
+void main () {
+char name;
+int age;
+printf("Qual o seu nome?\n");
+scanf(" %c", &name);
+fflush(stdin);
+printf("Qual a sua idade?\n");
+scanf(" %i", &age);
+printf("Seu nome comeca com a letra %c e vc tem %i anos\n",name,age);
+}
+
+
+2)
+#include <stdio.h>
+void main () {
+int x;
+for(x=1;x<=100;x=x+1){
+    printf("%i\n",x);
+}
+}
+
+3)
+#include <stdio.h>
+void main () {
+int x;
+for(x=100;x>=1;x--){
+    printf("%i\n",x);
+}
+}
+
+4)
+#include <stdio.h>
+void main () {
+int x;
+char letra;
+printf("Digite uma letra\n");
+scanf("%c", &letra);
+for(x=0;x<=10;x++){
+    printf("%c + %i = [%c]\n",letra,x,letra+x);
+}
+}
+
+5)
+#include <stdio.h>
+void main () {
+int x, y, opt;
+do {
+printf("Insira um numero:\n");
+scanf("%i", &y);
+for(x=1;x<=10;x++){
+    printf("%i x %i = [%i]\n",y,x,y*x);
+}
+printf("1 para continuar, or any key to exit:\n");
+scanf("%i", &opt);
+}
+while(opt==1);
+return 0;
+}
+
+
+6)
+#include <stdio.h>
+void main () {
+int x;
+scanf("%i",&x);
+while(x!=123){
+    printf("Try again, digitou %i\n",x);
+    scanf("%i",&x);
+}
+    printf("Acertou!\n");
+}
+
+
+7)
+#include <stdio.h>
+void main () {
+int x, y;
+printf("Insert two numbers:\n");
+scanf("%i %i", &x, &y);
+printf("the difference between %i and %i is: [%i]\n",x,y,x-y);
+}
+
+
+8)
+#include <stdio.h>
+void main () {
+float av1, av2, media;
+printf("Insira a nota 1\n");
+scanf("%f",&av1);
+printf("Insira a nota 2\n");
+scanf("%f",&av2);
+media = (av1 + av2)/2;
+if (media >= 6) {
+    printf("Aluno aprovado com média %.1f",media);
+} else
+printf("Aluno reprovado");
+}
+
+
+9)
+#include <stdio.h>
+void main () {
+int x;
+scanf("%i", &x);
+switch (x){
+    case 1 :
+    printf("ONE");
+    break;
+    
+     case 2 :
+    printf("DOIS");
+    break;
+
+    
+     case 3 :
+    printf("Tres");
+    break;
+
+
+    default :
+    printf("padrao");
+
+}
+}
+
+
+10)
+#include <stdio.h>
+void main () {
+int x;
+do {
+scanf("%i", &x);
+printf("Digitou %i\n",x);
+
+}while(x !=123);
+return 0;
+}
+
+
+11)
+#include <stdio.h>
+void main () {
+float media, freq;
+char nome[20];
+printf("Qual nome do aluno:\n");
+scanf("%s", &nome);
+printf("Insira a media:\n");
+scanf("%f", &media);
+printf("Insira a frequencia:\n");
+scanf("%f", &freq);
+if (media >=6 && freq >=75) {
+    printf("Aluno aprovado\n");
+}
+else
+    printf("Aluno reprovado\n");
+}
+
+
+12)
+#include <stdio.h>
+void main () {
+int memoria[4], x;
+
+for ( x=0; x<=4; x++){
+    scanf("%i", &memoria[x]);
+}
+for ( x=0; x<=4; x++){
+    printf("Vetor [%i] = %i\n",x,memoria[x]);
+}
+}
+
+
+13)
+#include <stdio.h>
+void main () {
+int memoria[4], x;
+
+for ( x=0; x<=4; x++){
+    memoria[x]= 0;
+}
+for ( x=0; x<=4; x++){
+    printf("Vetor [%i] = %i\n",x,memoria[x]);
+}
+}
+
+14)
+#include <stdio.h>
+void main () {
+int x;
+printf("Insira um valor\n");
+scanf("%i",&x);
+if (x %2 == 0) {
+    printf("Numero par ODD");
+    }
+    else
+          printf("Numero impar EVEN");
+}
+
+
+15)
+#include <stdio.h>
+void main () {
+int opt, limite, x;
+
+printf("Qual tabuada:\n");
+scanf("%i",&opt);
+
+do {
+printf("Qual limite maximo:\n");
+scanf("%i",&limite);
+}while (limite <=0);
+
+for (x = 1; x <= limite; x++){
+    printf("%i x %i = %i\n",opt,x,opt*x);
+}
+return 0;
+}
+
+
+
+15.2:
+
+#include <stdio.h>
+void main () {
+int opt, cont, max;
+
+printf("Qual tabuada:\n");
+scanf("%i", &opt);
+
+printf("Qual limite:\n");
+scanf("%i", &max);
+
+for(cont=0; cont <=max; cont++) {
+    printf("%i x %i = [%i]\n",opt,cont,opt*cont);
+}
+}
+
+16.
+#include <stdio.h>
+void main () {
+int x;
+printf("Insira um valor\n");
+scanf("%i", &x);
+x >= 0 ? x++ : x--;
+printf("novo valor is [%i]\n",x);
+}
+
+
+17) 
+#include <stdio.h>
+void main () {
+float n1, n2, media;
+printf("Insira notas:\n");
+scanf("%f %f", &n1, &n2);
+media = (n1 + n2) /2;
+if (media >=6 && media <=9.99){
+    printf("APROVADO %f\n"),media;
+} else if (media >=10) {
+printf("APROVADO NOTA MAXIMA %f\n",media);
+} else{
+    printf("REPROVADO! %f\n",media);
+}
+}
